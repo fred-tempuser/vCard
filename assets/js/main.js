@@ -21,7 +21,7 @@
 	$(window).on('load', function () {
 		$(".preloader").fadeOut(500);
 	});
-  
+
 	////////////////////////////////////////////////////
 	// 02. custom Js
 	$("[data-background").each(function () {
@@ -34,24 +34,52 @@
 
 
 
-    ////////////////////////////////////////////////////
+	////////////////////////////////////////////////////
 	// 03. tp-home-service-active
-    var tp_service_slide = new Swiper(".tp-home-service-active", {
+	var tp_service_slide = new Swiper(".tp-home-service-active", {
 		slidesPerView: 1,
 		speed: 700,
 		spaceBetween: 5,
-		centeredSlides:true,
+		centeredSlides: true,
 		loop: true,
 		pagination: {
 			el: ".tp-home-service-pagination",
 			clickable: true,
 		},
-    });	
+	});
 
-    ////////////////////////////////////////////////////
+	////////////////////////////////////////////////////
 	// 04. tp-testimonial-slider-active
-    var tp_service_slide = new Swiper(".tp-testimonial-slider-active", {
-		slidesPerView: 1,
+	var tp_service_slide = new Swiper(".tp-testimonial-slider-active-2", {
+		slidesPerView: 3,
+		speed: 700,
+		// spaceBetween: 5,
+		loop: true,
+		autoplay: {
+			delay: 4000,
+		},
+		breakpoints: {
+			'1400': {
+				slidesPerView: 3,
+			},
+			'1200': {
+				slidesPerView: 3,
+			},
+			'991': {
+				slidesPerView: 3,
+			},
+			'576': {
+				slidesPerView: 3,
+			},
+			'0': {
+				slidesPerView: 3,
+			},
+		},
+	});
+
+	// 04. tp-testimonial-slider-active
+	var tp_service_slide = new Swiper(".tp-testimonial-slider-active", {
+		slidesPerView: 3,
 		speed: 700,
 		spaceBetween: 24,
 		loop: true,
@@ -60,26 +88,26 @@
 		},
 		breakpoints: {
 			'1400': {
-				slidesPerView: 2,
+				slidesPerView: 3,
 			},
 			'1200': {
-				slidesPerView: 2,
+				slidesPerView: 3,
 			},
 			'991': {
-				slidesPerView: 2,
+				slidesPerView: 3,
 			},
 			'576': {
-				slidesPerView: 1,
+				slidesPerView: 3,
 			},
 			'0': {
-				slidesPerView: 1,
+				slidesPerView: 3,
 			},
 		},
-    });	
+	});
 
-    ////////////////////////////////////////////////////
+	////////////////////////////////////////////////////
 	// 05. tp-portfolio-slider-active
-    var tp_service_slide = new Swiper(".tp-portfolio-slider-active", {
+	var tp_service_slide = new Swiper(".tp-portfolio-slider-active", {
 		slidesPerView: 1,
 		speed: 700,
 		spaceBetween: 40,
@@ -104,7 +132,7 @@
 				slidesPerView: 1,
 			},
 		},
-    });	
+	});
 
 	// 06. Body overlay Js
 	$(".tp-offcanvas-open-btn").on("click", function () {

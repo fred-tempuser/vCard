@@ -4,11 +4,14 @@
 ---------------------------------*/
 
 // custom-container-here
-$container:(1690,1570);
+$container: (
+  1690,
+  1570
+);
 
-@each $number in $container{
+@each $number in $container {
   @media (min-width:1400px) {
-    .container-#{$number}{
+    .container-#{$number} {
       max-width: #{$number}px;
     }
   }
@@ -16,9 +19,10 @@ $container:(1690,1570);
 
 // color-variables
 @each $name, $color in $colors {
-  @each $key, $value in $color{
+  @each $key, $value in $color {
     .tp-text-#{$name}-#{$key} {
-      color: var(--tp-#{$name}-#{$key});
+      // color: var(--tp-#{$name}-#{$key});
+      color: #fff;
     }
 
     .tp-bg-#{$name}-#{$key} {
@@ -29,17 +33,20 @@ $container:(1690,1570);
 
 // tp-font-famely-variables
 @each $font, $famely in $font-family {
-  @each $key, $value in $famely{
-      .tp-#{$font}-#{$key} {
-        font-family: var(--tp-#{$font}-#{$key});
-      }
+  @each $key, $value in $famely {
+    .tp-#{$font}-#{$key} {
+      font-family: var(--tp-#{$font}-#{$key});
+    }
   }
 }
+
 /* Font weight */
 $font-weight: 100;
+
 @while $font-weight < 1000 {
   .fw-#{$font-weight} {
     font-weight: (#{$font-weight});
   }
+
   $font-weight: $font-weight + 100;
 }

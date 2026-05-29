@@ -28,6 +28,32 @@
    </div>
    <!-- Preloader End -->
 
+   <!-- light-dark-switch -->
+   <!-- <div class="tp-dark-switch-wrap">
+      <button class="tp-dark-switch p-relative">
+         <i class="moon fa-light fa-moon"></i>
+         <i class="sun fa-light fa-sun-bright"></i>
+      </button>
+   </div> -->
+
+   <header>
+      <div class="tp-header-2-area">
+         <div class="container">
+            <div class="tp-header-border tp-header-spacing">
+               <div class="row align-items-center">
+                  <div class="col-9 col-xl-2">
+                     <div class="tp-header-logo">
+                        <img style="width: 100%; height: 100%;" src="assets/img/logo/CFD_Retangle2.png" alt="">
+                        <!-- <img data-width="98" class="logo logo-black d-none" src="assets/img/logo/CFB_Logo100x100.png"
+                           alt=""> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
    <main>
 
       <!-- tp-main-area-start -->
@@ -66,8 +92,10 @@
                      <div class="col-xl-7 col-lg-7 col-md-7 mb-15">
                         <div class="tp-home-about-wrap p-relative z-index-1 tp-round-10 border-full h-100">
                            <img class="tp-home-bg-position" src="assets/img/about/thumb.png" alt="">
-                           <span class="tp-home-subtitle d-block text-start mb-40">Sobre o Atleta</span>
-                           <h2 class="tp-home-title fw-500 tp-text-common-white">Campeonatos Participados:</h2>
+                           <!-- <span class="tp-home-subtitle d-block text-start mb-40" style="color: #186d4e;">Sobre o
+                              Atleta</span> -->
+                           <h2 class="tp-home-title fw-500 tp-text-common-white" style="color: #186d4e;">Campeonatos
+                              Participados:</h2>
                            <!-- <p style="font-size: 18px;">Campeonato 1</p>
                            <p style="font-size: 18px;">Campeonato 2</p>
                            <p style="font-size: 18px;">Campeonato 3</p> -->
@@ -93,22 +121,6 @@
                               <div class="swiper-container tp-testimonial-slider-active-2">
 
                                  <div class="swiper-wrapper" id="atleta-trofeus-container">
-                                    <!-- <div class="swiper-slide">
-                                       <div class="tp-home-software-item"
-                                          style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-                                          <a class="tp-home-software-icon" href="#">
-                                             <img src="imagens/trofeu_prata.png" alt="">
-                                          </a>
-                                       </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                       <div class="tp-home-software-item"
-                                          style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-                                          <a class="tp-home-software-icon" href="#">
-                                             <img src="imagens/trofeu_prata.png" alt="">
-                                          </a>
-                                       </div>
-                                    </div> -->
 
                                     <div class="swiper-slide">
                                        <div class="tp-home-software-item"
@@ -176,6 +188,7 @@
                atleta.sobre_o_atleta.campeonatos_participados.forEach(camp => {
                   const p = document.createElement('p');
                   p.textContent = camp;
+                  p.style.color = '#2bbd87';
                   listaCampeonatos.appendChild(p);
                });
 

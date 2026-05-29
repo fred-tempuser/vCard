@@ -369,28 +369,28 @@
     }
 
     &-software {
-        &-shape {
-            position: absolute;
-            background: linear-gradient(90deg, #1c1c1c 0%, rgba(28, 28, 28, 0) 100%);
-            left: 0;
-            top: 0;
-            display: inline-block;
-            z-index: 1;
-            width: 170px;
-            height: 100%;
+        // &-shape {
+        //     position: absolute;
+        //     background: linear-gradient(90deg, #1c1c1c 0%, rgba(28, 28, 28, 0) 100%);
+        //     left: 0;
+        //     top: 0;
+        //     display: inline-block;
+        //     z-index: 1;
+        //     width: 170px;
+        //     height: 100%;
 
-            &-2 {
-                position: absolute;
-                right: 0;
-                top: 0;
-                display: inline-block;
-                z-index: 1;
-                width: 170px;
-                height: 100%;
-                transform: rotate(-180deg);
-                background: linear-gradient(90deg, #1c1c1c 0%, rgba(28, 28, 28, 0) 100%);
-            }
-        }
+        //     &-2 {
+        //         position: absolute;
+        //         right: 0;
+        //         top: 0;
+        //         display: inline-block;
+        //         z-index: 1;
+        //         width: 170px;
+        //         height: 100%;
+        //         transform: rotate(-180deg);
+        //         background: linear-gradient(90deg, #1c1c1c 0%, rgba(28, 28, 28, 0) 100%);
+        //     }
+        // }
 
         &-item {
             // margin-right: 15px;

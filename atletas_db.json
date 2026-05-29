@@ -2,12 +2,12 @@
     {
         "id": 1,
         "foto_perfil": "foto_perfil_1.webp",
-        "nome_completo": "Nome Completo do Atleta",
+        "nome_completo": "Armando José",
         "idade": "",
         "genero": "M",
         "modalidade": "Natação",
-        "numero": " ",
-        "categoria": " ",
+        "numero": "2525",
+        "categoria": " Juvenil",
         "sobre_o_atleta": {
             "campeonatos_participados": [
                 "Nacional de Natação",
@@ -17,26 +17,26 @@
         },
         "trofeus": [
             {
-                "id_trofeu": 501,
-                "nome": "Medalha de Ouro",
-                "imagem": "trofeu_prata.png"
-            },
-            {
-                "id_trofeu": 502,
-                "nome": "Medalha de Prata",
-                "imagem": "trofeu_prata.png"
-            },
-            {
-                "id_trofeu": 503,
+                "id_trofeu": 101,
                 "nome": "Medalha de Bronze",
+                "imagem": "medalha_bronze.png"
+            },
+            {
+                "id_trofeu": 102,
+                "nome": "1 lugar no Campeonato de Inverno",
                 "imagem": "trofeu_prata.png"
+            },
+            {
+                "id_trofeu": 103,
+                "nome": "Medalha de Bronze",
+                "imagem": "medalha_bronze.png"
             }
         ]
     },
     {
         "id": 2,
         "foto_perfil": "foto_perfil_2.webp",
-        "nome_completo": "Nome Completo da Atleta",
+        "nome_completo": "Maria Silva",
         "idade": "",
         "genero": "F",
         "modalidade": "Natação",
